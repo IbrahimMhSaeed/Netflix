@@ -1,0 +1,481 @@
+*{
+    --red: #e50914;
+    --gray: #222;
+
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+html,body
+{
+    overflow-x: hidden; 
+}
+
+body{
+    background-color: var(--gray);
+}
+
+.hero-section{
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/0bd3a69d-6790-4edc-9818-1c8c558946c2/d0aeeec1-e765-4311-8db1-fbde95a48ab6/SD-en-20220329-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 10px;
+}
+
+.layer1{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(0 0 0 / 72%), rgba(0, 0, 0, 0.137), rgb(0 0 0 / 72%));
+}
+
+.layer2{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(90deg, rgb(0 0 0 / 72%), rgba(0, 0, 0, 0.137), rgb(0 0 0 / 72%));
+}
+
+.bar, .main-text{
+    position: relative;
+}
+
+.bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 56px 0 56px;
+    box-sizing: border-box;
+}
+
+.logo{
+    height: 35px;
+}
+
+.logo img{
+    height: 100%;
+    max-width: 100%;
+}
+
+.buttons{
+    display: flex;
+}
+
+.button1{
+    padding: 7px 17px;
+    background-color: var(--red);
+    border-radius: 3px;
+    font-size: 1rem;
+}
+
+.dropdown{
+    position: relative;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.drop-btn{
+    padding: 8px;
+    border: 0.5px solid rgba(255, 255, 255, 0.555);
+    border-radius: 1px;
+    font-size: 0.875rem
+}
+
+.dropdown:hover .drop-content{
+    display: block;
+}
+
+.drop-content{
+    display: none;
+    position: absolute;
+    z-index: 9;
+}
+
+.drop-content a{
+    background-color: gray;
+    width: 100%;
+    padding: 5px 10px;
+    display: block;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.drop-content a:hover{
+    background-color: rgb(104, 104, 104);
+}
+
+
+.main-text{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+
+.unlimited{
+    margin: 0 auto;
+    padding-top: 130px;
+    max-width: 650px;
+}
+
+.unlimited h1{
+    font-size: 3.125rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.unlimited h3{
+    font-size: 1.525rem;
+    font-weight: 500;
+}
+
+.unlimited p{
+    font-size: 1.2rem;
+}
+
+form{
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+input[type="email"]{
+    flex-basis: 71%;
+    padding: 15px 8px;
+    box-sizing: border-box;
+    outline: none;
+    color: black;
+}
+
+button[type="submit"]{
+    padding: 15px 5px;
+    flex-basis: 29%;
+    background-color: var(--red);
+    cursor: pointer;
+    font-size: 1.625rem;
+    border: none;
+    transition: 0.3s;
+}
+button[type="submit"]:hover{
+    background-color: #df222c;
+}
+
+.row{
+    width: 100vw;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 70px 90px;
+    margin-bottom: 10px;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+.column-text{
+    flex-basis: 48%;
+    flex-shrink: 0;
+    font-size: 1.525rem;
+    max-width: 550px;
+    padding: 10px;
+}
+
+.column-text h2{
+    font-size: 3rem;
+}
+
+.column-pic{
+    flex-basis: 48%;
+    flex-shrink: 0;
+    position: relative;
+    height: fit-content;
+    max-width: 550px;
+    padding: 10px;
+}
+
+.column-pic img{
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    z-index: 3;
+    position: relative;
+}
+
+.column-pic video{
+    position: absolute;
+    top: 22%;
+    left: 14%;
+    max-width: 71%;
+    height: auto;
+}
+
+/* .download-row{
+    padding: 70px 90px;
+} */
+
+.download-column img{
+    height: auto;
+    max-width: 90%;
+    z-index: 2;
+} 
+
+.stranger-cont{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+    padding: 8px;
+    z-index: 3;
+    position: absolute;
+    top: 67%;
+    left: 12%;
+    width: 60%;
+    height: auto;
+}
+
+
+.stranger-cont img:first-child{
+    height: 70px;
+    max-width: 50%;
+}
+
+.stranger-gif{
+    height: 50px !important;
+    margin-left: auto;
+}
+
+.stranger-text-cont{
+    margin-left: 10px;
+}
+
+.stranger-text-cont h3{
+    font-size: 1rem;
+    margin: 0;
+}
+
+.stranger-text-cont span{
+    color: rgb(33, 33, 252);
+    font-size: 0.9rem;
+}
+
+.watch-column video{
+    max-width: 61%;
+    top: 11%;
+    left: 19%;
+}
+
+.column-question{
+    text-align: center;
+    width: 80vw;
+}
+
+.column-question h2{
+    font-size: 3rem;
+}
+
+.ques{
+    cursor: pointer;
+}
+
+.ques,
+.ans{
+    min-width: 50vw;
+    width: 100%;
+    max-width: 900px;
+    padding: 20px 30px;
+    margin: 0 auto 10px auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--gray);
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    text-align: left;
+    line-height: 2rem;
+}
+
+.ques i{
+    align-self: center;
+}
+
+.ans{
+    height: 0px;
+    transition: 2s;
+    display: none;
+}
+
+.column-question .unlimited{
+    padding-top: 50px;
+    margin: 0 auto;
+    max-width: fit-content;
+}
+.column-question form{
+    margin: 0 auto;
+}
+
+@media (max-width: 1100px){
+    .row{
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+    .row .column-text,
+    .row .column-pic{
+        flex-basis: 70%;
+    }
+    .row .column-question{
+        max-width: 70vw;
+    }
+    .stranger-cont {
+        top: 67%;
+        left: 18%;
+    }
+}
+
+@media (max-width: 850px){
+    .row div h2{
+        font-size: 2.5rem;
+    }
+    .column-text{
+        font-size: 1.5rem;
+    }
+    .column-question .unlimited p{
+        font-size: 1rem;
+    }
+    .column-question form button{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 750px){
+    .unlimited{
+        max-width: 75vw;
+    }
+    .unlimited h1{
+        font-size: 2.5rem;
+    }
+    .unlimited h3{
+        font-size: 1.5rem;
+    }
+    .unlimited p{
+        font-size: 1rem;
+    }
+    .main-text form{
+        max-width: 80vw;
+    }
+    .main-text form button{
+        font-size: 1.2rem;
+    }
+    h2{
+        font-size: 2rem !important;
+    }
+    p{
+        font-size: 1.2rem !important;
+    }
+    .row .column-text{
+        max-width: 90vw;
+    }
+    .ques,
+    .ans{
+        font-size: 1.2rem;
+    }
+    .column-question form button {
+        font-size: 1rem;
+    }
+    .bar{
+        padding: 25px 30px 0 30px;
+    }
+    .logo{
+        height: 25px;
+    }
+    .button1{
+        font-size: 0.8rem;
+    }
+    .drop-btn{
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 550px){
+    .unlimited h1{
+        font-size: 1.9rem;
+    }
+    .unlimited h3{
+        font-size: 1rem;
+    }
+    .main-text form{
+        font-size: 0.8rem;
+    }
+    .main-text form button{
+        font-size: 0.8rem;
+    }
+    h2{
+        font-size: 1.5rem !important;
+    }
+    p{
+        font-size: 0.9rem !important;
+    }
+    .ques{
+        font-size: 1rem;
+        padding: 10px 15px;
+        margin-bottom: 5px;
+    }
+    .column-question form{
+        max-width: 80vw;
+    }
+    .column-question form button {
+        font-size: 0.8rem;
+        flex-basis: 40%;
+        flex-shrink: 0 !important;
+    }
+    button{
+        padding: 8px 3px;
+    }
+    input[type="email"]{
+        font-size: 0.8rem;
+        flex-basis: 30%;
+        padding: 8px 5px;
+    }
+}
+
+@media (max-width: 420px){
+    .unlimited h1{
+        font-size: 1.5rem;
+    }
+    .main-text form{
+        font-size: 0.6rem;
+    }
+    .main-text form button{
+        font-size: 0.6rem;
+    }
+    .bar{
+        padding: 25px 20px 0 20px;
+    }
+    .logo{
+        height: 20px;
+    }
+    .button1{
+        font-size: 0.7rem;
+    }
+    .drop-btn{
+        font-size: 0.6rem;
+    }
+    .ques{
+        font-size: 0.9rem;
+        padding: 10px 15px;
+        margin-bottom: 5px;
+    }
+    .column-question form{
+        max-width: 80vw;
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
+
