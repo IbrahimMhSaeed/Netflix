@@ -239,6 +239,8 @@ button[type="submit"]:hover{
     left: 12%;
     width: 60%;
     height: auto;
+    line-height: 1.8rem;
+    text-align: left;
 }
 
 
@@ -274,7 +276,7 @@ button[type="submit"]:hover{
 
 .column-question{
     text-align: center;
-    width: 80vw;
+    width: 70vw;
 }
 
 .column-question h2{
@@ -306,9 +308,11 @@ button[type="submit"]:hover{
 }
 
 .ans{
-    height: 0px;
-    transition: 2s;
     display: none;
+}
+
+.ques:hover + .ans{
+    display: block;
 }
 
 .column-question .unlimited{
@@ -443,6 +447,25 @@ button[type="submit"]:hover{
         flex-basis: 30%;
         padding: 8px 5px;
     }
+    .stranger-cont{
+        line-height: 1.2rem;
+        width: 70%;
+        top: 60%;
+        left: 11%;
+    }
+    .stranger-cont img:first-child{
+        height: 50px;
+    }
+    .stranger-gif{
+        height: 40px !important;
+    }
+    .stranger-text-cont h3{
+        font-size: 0.9rem;
+    }
+    .stranger-text-cont span{
+        font-size: 0.8rem;
+    }
+    
 }
 
 @media (max-width: 420px){
@@ -467,7 +490,8 @@ button[type="submit"]:hover{
     .drop-btn{
         font-size: 0.6rem;
     }
-    .ques{
+    .ques,
+    .ans{
         font-size: 0.9rem;
         padding: 10px 15px;
         margin-bottom: 5px;
