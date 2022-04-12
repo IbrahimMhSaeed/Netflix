@@ -311,10 +311,6 @@ button[type="submit"]:hover{
     display: none;
 }
 
-.ques-ans:hover .ans{
-    display: block;
-}
-
 .column-question .unlimited{
     padding-top: 50px;
     margin: 0 auto;
