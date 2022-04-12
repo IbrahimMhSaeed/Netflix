@@ -311,7 +311,7 @@ button[type="submit"]:hover{
     display: none;
 }
 
-.ques:hover + .ans{
+.ques-ans:hover .ans{
     display: block;
 }
 
